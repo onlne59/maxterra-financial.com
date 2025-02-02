@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxterra Financial Group LLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0D47A1;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #FFD700;
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #FFD700;
+            color: #0D47A1;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Maxterra Financial Group LLC</h1>
+        <p>Trusted Partner in Business Investments</p>
+        <img src="https://source.unsplash.com/800x400/?handshake,business" alt="Handshake Business Deal">
+        <p>We specialize in business investments, financial growth, and strategic partnerships.</p>
+        <p class="contact"><strong>Contact Us:</strong></p>
+        <p>📍 100 Park Avenue, New York, NY 10017, USA</p>
+        <p>📞 +1 914 901 5959</p>
+        <a href="tel:+19149015959" class="button">Call Us Now</a>
+    </div>
+</body>
+</html>
