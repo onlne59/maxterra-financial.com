@@ -9,73 +9,106 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
+            color: #333;
         }
-        .hero {
-            background: url('https://source.unsplash.com/1600x900/?business,handshake') no-repeat center center/cover;
+        .header {
+            background: url('https://source.unsplash.com/1600x900/?business,finance') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            text-align: center;
-            padding: 100px 20px;
             font-size: 28px;
             font-weight: bold;
+            text-align: center;
         }
         .container {
-            max-width: 1100px;
+            width: 80%;
             margin: auto;
-            padding: 20px;
             background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #333;
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
         }
         .services {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
+            text-align: center;
         }
-        .service {
+        .service-box {
             flex: 1;
-            padding: 20px;
             margin: 10px;
+            padding: 15px;
             background: #f8f9fa;
-            border-left: 4px solid #007bff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .contact {
             text-align: center;
             padding: 20px;
         }
-        .contact a {
-            color: #007bff;
-            text-decoration: none;
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact button:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        Maxterra Financial Group LLC<br>
-        Trusted Partner in Business Investments
+    <div class="header">
+        Maxterra Financial Group LLC - Trusted Partner in Business Investments
     </div>
     <div class="container">
-        <h2>About Us</h2>
-        <p>Maxterra Financial Group LLC is a premier financial consulting firm, dedicated to empowering businesses with strategic investment solutions, risk assessment, and financial planning. Our expertise ensures your business grows with confidence and stability.</p>
+        <h2 class="section-title">About Us</h2>
+        <p>Maxterra Financial Group LLC is a leading financial consulting firm dedicated to empowering businesses with strategic investment solutions, risk assessment, and financial planning.</p>
         
-        <h2>Our Services</h2>
+        <h2 class="section-title">Our Services</h2>
         <div class="services">
-            <div class="service">📈 Business Investment Consulting</div>
-            <div class="service">💰 Wealth Management</div>
-            <div class="service">📊 Risk Assessment & Planning</div>
+            <div class="service-box">
+                <h3>💼 Business Investment Consulting</h3>
+                <p>Helping businesses make smart investment decisions.</p>
+            </div>
+            <div class="service-box">
+                <h3>💰 Wealth Management</h3>
+                <p>Optimizing financial growth and asset protection.</p>
+            </div>
+            <div class="service-box">
+                <h3>🌐 Risk Assessment & Planning</h3>
+                <p>Strategic risk evaluation for sustainable growth.</p>
+            </div>
         </div>
-        
-        <h2>Why Choose Us?</h2>
-        <p>✅ 10+ Years of Experience | ✅ Trusted by Fortune 500 Companies | ✅ Data-Driven Insights</p>
-        
+
+        <h2 class="section-title">Why Choose Us?</h2>
+        <p>We provide tailored financial strategies, expert market analysis, and result-driven investment solutions to help businesses achieve long-term stability.</p>
+    </div>
+
+    <div class="contact">
         <h2>Contact Us</h2>
-        <div class="contact">
-            📍 100 Park Avenue, New York, NY 10017, USA<br>
-            📞 +1 914 901 5959<br>
-            ✉️ <a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a>
-        </div>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <br>
+        <button>Send Message</button>
+        <p>📍 100 Park Avenue, New York, NY 10017, USA</p>
+        <p>📞 +1 914 901 5959</p>
+        <p>📧 <a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a></p>
     </div>
 </body>
 </html>
