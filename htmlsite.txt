@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxterra Financial Group LLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0D1B2A;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #FFD700;
+        }
+        .contact, .about {
+            margin-top: 20px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #FFD700;
+            color: #0D1B2A;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            background-color: #FFD700;
+            color: #0D1B2A;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Maxterra Financial Group LLC</h1>
+        <p>Trusted Partner in Business Investments</p>
+        <img src="https://source.unsplash.com/800x400/?handshake,business" alt="Handshake Business Deal">
+        
+        <div class="about">
+            <h2>About Us</h2>
+            <p>Maxterra Financial Group LLC is committed to empowering businesses with strategic financial solutions. 
+            Our expertise in investment management, risk assessment, and financial planning ensures that your business grows with confidence.</p>
+        </div>
+        
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>📍 100 Park Avenue, New York, NY 10017, USA</p>
+            <p>📞 +1 914 901 5959</p>
+            <p>📧 <a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a></p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
