@@ -7,90 +7,74 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0D1B2A;
-            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?business,handshake') no-repeat center center/cover;
+            color: white;
             text-align: center;
-            padding: 50px;
+            padding: 100px 20px;
+            font-size: 28px;
+            font-weight: bold;
         }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: auto;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #FFD700;
+        h2 {
+            color: #333;
         }
-        .contact, .about {
-            margin-top: 20px;
-            text-align: left;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .button {
-            display: inline-block;
-            padding: 12px 25px;
-            margin-top: 20px;
-            background-color: #FFD700;
-            color: #0D1B2A;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        form {
-            margin-top: 20px;
+        .services {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
-        input, textarea {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            font-size: 16px;
+        .service {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
         }
-        button {
-            padding: 10px;
-            background-color: #FFD700;
-            color: #0D1B2A;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .contact {
+            text-align: center;
+            padding: 20px;
         }
-        a {
-            color: #FFD700;
+        .contact a {
+            color: #007bff;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
+    <div class="hero">
+        Maxterra Financial Group LLC<br>
+        Trusted Partner in Business Investments
+    </div>
     <div class="container">
-        <h1>Maxterra Financial Group LLC</h1>
-        <p>Trusted Partner in Business Investments</p>
-        <img src="https://source.unsplash.com/800x400/?handshake,business" alt="Handshake Business Deal">
+        <h2>About Us</h2>
+        <p>Maxterra Financial Group LLC is a premier financial consulting firm, dedicated to empowering businesses with strategic investment solutions, risk assessment, and financial planning. Our expertise ensures your business grows with confidence and stability.</p>
         
-        <div class="about">
-            <h2>About Us</h2>
-            <p>Maxterra Financial Group LLC is committed to empowering businesses with strategic financial solutions. 
-            Our expertise in investment management, risk assessment, and financial planning ensures that your business grows with confidence.</p>
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">📈 Business Investment Consulting</div>
+            <div class="service">💰 Wealth Management</div>
+            <div class="service">📊 Risk Assessment & Planning</div>
         </div>
         
+        <h2>Why Choose Us?</h2>
+        <p>✅ 10+ Years of Experience | ✅ Trusted by Fortune 500 Companies | ✅ Data-Driven Insights</p>
+        
+        <h2>Contact Us</h2>
         <div class="contact">
-            <h2>Contact Us</h2>
-            <p>📍 100 Park Avenue, New York, NY 10017, USA</p>
-            <p>📞 +1 914 901 5959</p>
-            <p>📧 <a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a></p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            📍 100 Park Avenue, New York, NY 10017, USA<br>
+            📞 +1 914 901 5959<br>
+            ✉️ <a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a>
         </div>
     </div>
 </body>
