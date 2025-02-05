@@ -6,42 +6,60 @@
     <title>Maxterra Financial Group LLC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* General Styles */
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
-        h2 { font-size: 2rem; margin-bottom: 20px; }
-        p { font-size: 1rem; line-height: 1.6; }
-        a { color: #ffd700; text-decoration: none; transition: color 0.3s ease; }
-        a:hover { color: #fff; }
+        /* Custom Color Palette */
+        :root {
+            --primary-blue: #002366; /* Deep Blue */
+            --accent-red: #B22222;   /* Rich Red */
+            --gold: #FFD700;         /* Gold */
+            --light-gray: #f8f9fa;
+            --dark-gray: #1c1c1c;
+        }
 
-        /* Header with Background Image */
+        /* General Styles */
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--light-gray); 
+            color: var(--dark-gray); 
+        }
+        h2 { font-size: 2.2rem; margin-bottom: 20px; }
+        p { font-size: 1.1rem; line-height: 1.6; color: #555; }
+        a { color: var(--gold); text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: var(--accent-red); }
+
+        /* Hero Section with Image */
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x800'); /* Replace with your image URL */
+            background: linear-gradient(rgba(0, 35, 102, 0.8), rgba(0, 35, 102, 0.8)), 
+                        url('https://images.pexels.com/photos/6647034/pexels-photo-6647034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
             background-size: cover;
             background-position: center;
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 120px 20px;
+            padding: 140px 20px;
         }
         header h1 {
             font-size: 3rem;
             margin: 0;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         header p {
             font-size: 1.5rem;
-            margin: 10px 0 0;
+            margin: 20px 0;
         }
 
         /* Sections */
         .section {
-            padding: 60px 15%;
-            background: #fff;
+            padding: 80px 15%;
+            background: white;
         }
         .dark-section {
-            background: linear-gradient(135deg, #1c1c1c, #333);
-            color: #fff;
+            background: var(--primary-blue);
+            color: white;
         }
         .dark-section h2 {
-            color: #ffd700;
+            color: var(--gold);
         }
 
         /* Services */
@@ -49,70 +67,75 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
         }
         .service-box {
-            background: #f1f1f1;
+            background: white;
             padding: 30px;
             border-radius: 10px;
             width: 30%;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid var(--primary-blue);
         }
         .service-box:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
         .service-box i {
-            font-size: 2rem;
-            color: #ffd700;
+            font-size: 2.5rem;
+            color: var(--accent-red);
             margin-bottom: 15px;
+        }
+        .service-box h3 {
+            color: var(--primary-blue);
         }
 
         /* Contact Section */
         .contact {
             text-align: center;
-            background: linear-gradient(135deg, #1c1c1c, #333);
-            color: #fff;
-            padding: 60px 20px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 80px 20px;
         }
         .contact p {
-            margin: 10px 0;
+            margin: 15px 0;
         }
-        .contact a {
-            color: #ffd700;
+        .contact i {
+            margin-right: 10px;
+            color: var(--gold);
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
-            background: #111;
-            color: #fff;
+            padding: 30px;
+            background: var(--dark-gray);
+            color: white;
         }
         footer .social-icons {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         footer .social-icons a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 1.2rem;
+            color: white;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
         }
         footer .social-icons a:hover {
-            color: #ffd700;
+            color: var(--gold);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .service-box {
                 width: 100%;
-                margin: 10px 0;
             }
             .section, .dark-section {
-                padding: 40px 10%;
+                padding: 50px 10%;
             }
             header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             header p {
                 font-size: 1.2rem;
@@ -121,65 +144,67 @@
     </style>
 </head>
 <body>
-    <!-- Header with Background Image -->
+    <!-- Hero Section -->
     <header>
         <h1>Maxterra Financial Group LLC</h1>
-        <p>Your Trusted Partner in Business Investments</p>
+        <p>Strategic Financial Solutions for Global Success</p>
     </header>
 
-    <!-- About Us Section -->
+    <!-- About Us -->
     <div class="section">
         <div class="content">
             <h2>About Us</h2>
-            <p>Maxterra Financial Group LLC is dedicated to empowering individuals, businesses, and institutions with strategic financial solutions tailored to their unique needs. Our firm specializes in wealth management, asset allocation, and risk mitigation strategies designed to optimize financial growth and stability.</p>
-            <p>We support a broad range of investment opportunities, including broadly syndicated loans, private debt loans & bonds, corporate & municipal bonds, and much more. Whether you are an individual investor, a corporation, or an institution, we provide innovative strategies backed by deep market insights and a commitment to long-term success.</p>
+            <p>Maxterra Financial Group LLC empowers individuals, businesses, and institutions with tailored financial solutions. Specializing in wealth management, asset allocation, and risk mitigation, we optimize growth and stability.</p>
+            <p>Our expertise spans syndicated loans, private debt solutions, and structured financial products, delivering innovative strategies backed by market insights.</p>
         </div>
     </div>
 
-    <!-- Our History Section -->
+    <!-- Our History -->
     <div class="dark-section section">
         <div class="content">
             <h2>Our History</h2>
-            <p>Since our inception, Maxterra Financial Group LLC has built a reputation for excellence and reliability in the financial industry. From humble beginnings, we have grown into a trusted investment firm, continuously evolving to meet the changing needs of financial markets.</p>
-            <p>We remain committed to delivering financial solutions that stand the test of time, providing syndicated loans, private debt solutions, and structured financial products tailored to meet our clients' needs.</p>
+            <p>Founded with a vision for excellence, Maxterra Financial Group has evolved into a trusted leader in the financial industry. We adapt to market needs while upholding our commitment to reliability and client success.</p>
         </div>
     </div>
 
-    <!-- Our Services Section -->
+    <!-- Services -->
     <div class="section">
         <div class="content">
             <h2>Our Services</h2>
             <div class="services">
                 <div class="service-box">
                     <i class="fas fa-handshake"></i>
-                    <h3>Business Investment Consulting</h3>
+                    <h3>Investment Consulting</h3>
+                    <p>Tailored strategies for business growth and asset optimization.</p>
                 </div>
                 <div class="service-box">
                     <i class="fas fa-coins"></i>
                     <h3>Wealth Management</h3>
+                    <p>Comprehensive financial planning for long-term prosperity.</p>
                 </div>
                 <div class="service-box">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Risk Assessment & Planning</h3>
+                    <h3>Risk Assessment</h3>
+                    <p>Advanced analytics for risk mitigation and stability.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <div class="contact">
         <h2>Contact Us</h2>
-        <p><i class="fas fa-map-marker-alt"></i> 100 Park Avenue, New York, NY 10017, USA</p>
-        <p><i class="fas fa-phone"></i> +1 914 901 5959</p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i>100 Park Avenue, New York, NY 10017, USA</p>
+        <p><i class="fas fa-phone"></i>+1 914 901 5959</p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a></p>
     </div>
 
     <!-- Footer -->
     <footer>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <p>&copy; 2024 Maxterra Financial Group LLC. All Rights Reserved.</p>
     </footer>
