@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxterra Financial Group LLC</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
-        header { background: #002147; color: white; padding: 20px; text-align: center; }
-        section { padding: 50px; text-align: center; }
-        .hero { background: url('financial-background.jpg') no-repeat center center/cover; color: white; padding: 100px 20px; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .services, .testimonials, .contact { background: white; padding: 40px; margin: 20px auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        .services img, .testimonials img { width: 80px; }
-        footer { background: #002147; color: white; text-align: center; padding: 20px; }
-        .cta { background: #ffd700; color: #002147; padding: 15px 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; border-radius: 5px; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: url('https://source.unsplash.com/1600x900/?business,handshake') center/cover; color: white; text-align: center; padding: 60px 20px; font-size: 24px; }
+        section { padding: 40px; background: white; margin: 20px; border-radius: 10px; }
+        .container { max-width: 1000px; margin: auto; }
+        h2 { color: #333; }
+        .services, .testimonials { display: flex; justify-content: space-between; }
+        .service, .testimonial { width: 30%; padding: 20px; background: #eee; border-radius: 5px; }
+        .contact-form { display: flex; flex-direction: column; max-width: 500px; }
+        input, textarea { margin-bottom: 10px; padding: 10px; }
+        .btn { background: #007BFF; color: white; padding: 10px; border: none; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -23,47 +23,44 @@
         <p>Trusted Partner in Business Investments</p>
     </header>
     
-    <section class="hero">
-        <h2>Wealth Management & Investment Advisory</h2>
-        <p>Helping clients grow their wealth through expert financial strategies.</p>
-        <a href="#contact" class="cta">Get in Touch</a>
-    </section>
-    
     <div class="container">
-        <section class="services">
+        <section>
+            <h2>About Us</h2>
+            <p>Maxterra Financial Group LLC specializes in strategic financial solutions, wealth management, and risk assessment. Our expert team provides tailored investment opportunities and capital solutions to help clients grow their financial portfolios with confidence.</p>
+        </section>
+
+        <section>
+            <h2>Our History</h2>
+            <p>Since our inception, we have built a reputation for excellence, reliability, and personalized service in the financial industry. From humble beginnings, we have grown into a trusted investment firm, continuously evolving to meet the changing needs of the financial markets.</p>
+        </section>
+
+        <section>
             <h2>Our Services</h2>
-            <p>We offer tailored financial solutions, including:</p>
-            <ul>
-                <li>Business Investment Consulting</li>
-                <li>Wealth Management</li>
-                <li>Risk Assessment & Planning</li>
-                <li>Capital Solutions</li>
-            </ul>
+            <div class="services">
+                <div class="service">💼 Business Investment Consulting</div>
+                <div class="service">💰 Wealth Management</div>
+                <div class="service">📊 Risk Assessment & Planning</div>
+            </div>
         </section>
-    
-        <section class="testimonials">
+        
+        <section>
             <h2>Client Testimonials</h2>
-            <p>What our clients say about us:</p>
-            <blockquote>"Maxterra helped us grow our portfolio by 200%! Their expertise is unmatched." – John D.</blockquote>
-            <blockquote>"I trust Maxterra with all my investment strategies. Highly recommended!" – Sarah L.</blockquote>
+            <div class="testimonials">
+                <div class="testimonial">"Maxterra transformed our financial strategy! Highly recommended!" - John D.</div>
+                <div class="testimonial">"Incredible team with unmatched financial expertise." - Sarah W.</div>
+                <div class="testimonial">"Professional, reliable, and highly knowledgeable!" - Michael R.</div>
+            </div>
         </section>
-    
-        <section class="contact" id="contact">
+        
+        <section>
             <h2>Contact Us</h2>
-            <p>📍 100 Park Avenue, New York, NY 10017, USA</p>
-            <p>📞 +1 914 901 5959</p>
-            <p>📧 <a href="mailto:info@maxterrafinancialgroupllc.com">info@maxterrafinancialgroupllc.com</a></p>
-            <form>
-                <input type="text" placeholder="Your Name" required><br>
-                <input type="email" placeholder="Your Email" required><br>
-                <textarea placeholder="Your Message" required></textarea><br>
-                <button type="submit" class="cta">Send Message</button>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button class="btn">Submit</button>
             </form>
         </section>
     </div>
-    
-    <footer>
-        <p>&copy; 2024 Maxterra Financial Group LLC. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
