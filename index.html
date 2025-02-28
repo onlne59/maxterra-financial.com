@@ -120,7 +120,7 @@
       margin-bottom: 10px;
     }
 
-    /* Testimonials Carousel */
+    /* Testimonials */
     .testimonials {
       position: relative;
       max-width: 800px;
@@ -194,7 +194,7 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <h1>Empowering Your Financial Future</h1>
-    <p>At MaxTerra Financial Group LLC, we provide personalized financial consulting services to help businesses and individuals achieve their goals.</p>
+    <p>At MaxTerra Financial Group LLC, we provide personalized financial consulting services to help businesses and individuals achieve their goals. Let us guide you toward success with clarity, strategy, and results.</p>
     <a href="#contact" class="cta">Schedule Your Free Consultation Today</a>
   </section>
 
@@ -202,7 +202,8 @@
   <section class="section" id="about">
     <h2>Who We Are</h2>
     <p>MaxTerra Financial Group LLC is a trusted consulting firm based in the heart of Vancouver, BC. With years of experience in financial strategy, business consulting, and personalized advisory services, we are committed to helping our clients navigate complex challenges and unlock new opportunities.</p>
-    <a href="#contact" class="cta">Contact Us Today</a>
+    <p>Our team of experts brings a wealth of knowledge and a client-focused approach to every project. We understand that every client is unique, and we tailor our solutions to meet your specific needs. Whether you’re a small business owner, an entrepreneur, or an individual looking to secure your financial future, we’re here to provide the guidance and support you need to succeed.</p>
+    <p>At MaxTerra, we believe in building long-term relationships with our clients. Our mission is to empower you with the tools and strategies you need to achieve your financial goals and thrive in an ever-changing world.</p>
   </section>
 
   <!-- Services -->
@@ -211,26 +212,25 @@
     <div class="services">
       <div class="service-card">
         <h3>Financial Strategy</h3>
-        <p>Develop a clear roadmap to achieve your financial goals.</p>
+        <p>We help you develop a clear and actionable roadmap to achieve your financial goals. Our team analyzes your current financial situation, identifies opportunities for growth, and creates a customized strategy to maximize your returns. Whether you’re planning for short-term objectives or long-term wealth accumulation, we provide the expertise and guidance you need to succeed.</p>
       </div>
       <div class="service-card">
         <h3>Business Consulting</h3>
-        <p>Streamline operations, improve efficiency, and drive growth.</p>
+        <p>Our business consulting services are designed to help you streamline operations, improve efficiency, and drive growth. We work closely with you to identify areas of improvement, implement best practices, and develop strategies to enhance profitability. From startups to established enterprises, we provide tailored solutions to meet your unique business needs.</p>
       </div>
       <div class="service-card">
         <h3>Investment Advisory</h3>
-        <p>Make informed decisions with expert guidance.</p>
+        <p>Make informed decisions with our expert investment advisory services. We provide personalized recommendations based on your risk tolerance, financial goals, and market conditions. Our team stays ahead of market trends to help you build a diversified portfolio that aligns with your objectives. Let us guide you toward achieving your investment goals with confidence.</p>
       </div>
       <div class="service-card">
         <h3>Retirement Planning</h3>
-        <p>Secure your future with tailored retirement solutions.</p>
+        <p>Secure your future with our comprehensive retirement planning services. We help you create a tailored plan to ensure financial stability during your retirement years. From calculating your retirement needs to optimizing your savings and investments, we provide the tools and strategies you need to enjoy a comfortable and stress-free retirement.</p>
       </div>
       <div class="service-card">
         <h3>Tax Optimization</h3>
-        <p>Minimize liabilities and maximize returns.</p>
+        <p>Minimize your tax liabilities and maximize your returns with our tax optimization services. Our team stays up-to-date with the latest tax laws and regulations to help you take advantage of every available opportunity. We provide personalized strategies to reduce your tax burden and ensure compliance with all relevant tax authorities.</p>
       </div>
     </div>
-    <a href="#contact" class="cta">Let’s Get Started</a>
   </section>
 
   <!-- Testimonials -->
@@ -255,7 +255,7 @@
   <!-- Contact Us -->
   <section class="section" id="contact">
     <h2>Get in Touch</h2>
-    <p>We’d love to hear from you! Reach out to us using the information below, or fill out the form, and we’ll get back to you as soon as possible.</p>
+    <p>We’d love to hear from you! Whether you have questions about our services or are ready to schedule a consultation, our team is here to help. Reach out to us using the information below, or fill out the form, and we’ll get back to you as soon as possible.</p>
     <p><strong>Phone:</strong> +1 778 403 3860</p>
     <p><strong>Email:</strong> info@maxterrafinancialgroupllc.com</p>
     <p><strong>Address:</strong> 1067 West Cordova Street, Vancouver, BC</p>
@@ -296,16 +296,6 @@
     }
 
     setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
-
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
   </script>
 </body>
 </html>
