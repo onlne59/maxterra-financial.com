@@ -1,302 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MaxTerra Financial Group LLC</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #002366;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaxTerra Financial Group LLC | Premium Advisory</title>
 
-    h1, h2, h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    a {
-      color: #FFD700;
-      text-decoration: none;
-    }
+<style>
+:root {
+--primary-blue: #001a4d;
+--accent-gold: #c5a059;
+--light-gold: #e2c99d;
+--text-white: #ffffff;
+--bg-light: #f9f9f9;
+--glass: rgba(255, 255, 255, 0.1);
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+body {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+padding: 0;
+color: #333;
+line-height: 1.8;
+overflow-x: hidden;
+}
 
-    /* Header */
-    header {
-      background: #002366;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+h1, h2, h3 {
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
 
-    header nav a {
-      color: white;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+.gold-text { color: var(--accent-gold); }
 
-    /* Hero Section */
-    .hero {
-      background: url('your-hero-image.jpg') no-repeat center center/cover;
-      color: white;
-      padding: 150px 20px;
-      text-align: center;
-    }
+header {
+background: rgba(0, 26, 77, 0.95);
+backdrop-filter: blur(10px);
+color: white;
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 1000;
+border-bottom: 2px solid var(--accent-gold);
+}
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
+nav {
+display: flex;
+justify-content: center;
+gap: 30px;
+}
 
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      animation: fadeIn 3s ease-in-out;
-    }
+nav a {
+color: white;
+text-decoration: none;
+font-weight: 600;
+font-size: 0.9rem;
+transition: 0.3s;
+}
 
-    .hero .cta {
-      background: #FFD700;
-      color: #002366;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      animation: fadeIn 4s ease-in-out;
-    }
+nav a:hover { color: var(--accent-gold); }
 
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+.hero {
+background: linear-gradient(rgba(0, 26, 77, 0.7), rgba(0, 26, 77, 0.7)),
+url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070') no-repeat center center/cover;
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+padding: 0 20px;
+}
 
-    /* Sections */
-    .section {
-      padding: 80px 20px;
-      text-align: center;
-    }
+.hero h1 {
+font-size: 3.5rem;
+margin-bottom: 10px;
+font-family: 'Playfair Display', serif;
+}
 
-    .section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
+.hero p {
+max-width: 700px;
+font-size: 1.2rem;
+margin-bottom: 40px;
+}
 
-    .services {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
+.cta-btn {
+background: var(--accent-gold);
+color: var(--primary-blue);
+padding: 15px 35px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 0;
+transition: 0.3s;
+display: inline-block;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
 
-    .service-card {
-      background: #f4f4f4;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 10px;
-      width: 30%;
-      min-width: 250px;
-      transition: transform 0.3s ease;
-    }
+.cta-btn:hover {
+background: var(--light-gold);
+transform: translateY(-3px);
+}
 
-    .service-card:hover {
-      transform: scale(1.05);
-    }
+.section-title {
+text-align: center;
+margin-bottom: 60px;
+}
 
-    .service-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
+.section-title h2 {
+font-size: 2.5rem;
+display: inline-block;
+padding-bottom: 10px;
+border-bottom: 3px solid var(--accent-gold);
+}
 
-    /* Testimonials */
-    .testimonials {
-      position: relative;
-      max-width: 800px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
+.about-container {
+background: var(--primary-blue);
+color: white;
+padding: 100px 10%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 50px;
+align-items: center;
+}
 
-    .testimonial-card {
-      display: none;
-      padding: 20px;
-      background: #f4f4f4;
-      border-radius: 10px;
-      text-align: center;
-    }
+.about-image img {
+width: 100%;
+border: 10px solid var(--glass);
+}
 
-    .testimonial-card.active {
-      display: block;
-      animation: fadeIn 1s ease-in-out;
-    }
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+padding: 60px 10%;
+background: var(--bg-light);
+}
 
-    /* Contact Form */
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: left;
-    }
+.service-card {
+background: white;
+padding: 40px;
+border-radius: 5px;
+text-align: center;
+transition: 0.4s;
+border-top: 5px solid transparent;
+box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
 
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+.service-card:hover {
+border-top: 5px solid var(--accent-gold);
+transform: translateY(-10px);
+}
 
-    .contact-form button {
-      background: #FFD700;
-      color: #002366;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+.service-card i {
+font-size: 3rem;
+color: var(--accent-gold);
+margin-bottom: 20px;
+}
 
-    /* Footer */
-    footer {
-      background: #002366;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
+.testimonial-section {
+background: var(--primary-blue);
+color: white;
+padding: 100px 10%;
+text-align: center;
+}
 
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+.testimonial-card {
+font-style: italic;
+font-size: 1.5rem;
+max-width: 900px;
+margin: 0 auto;
+display: none;
+}
+
+.testimonial-card.active { display: block; }
+
+.contact-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 80px 10%;
+}
+
+.contact-info {
+background: var(--accent-gold);
+color: var(--primary-blue);
+padding: 50px;
+}
+
+.contact-form {
+padding: 50px;
+background: #fff;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+width: 100%;
+padding: 12px;
+margin: 10px 0;
+border: 1px solid #ddd;
+box-sizing: border-box;
+}
+
+footer {
+background: #000a1f;
+color: #777;
+text-align: center;
+padding: 50px 0;
+border-top: 1px solid #222;
+}
+
+@media (max-width: 768px) {
+.about-container, .contact-container { grid-template-columns: 1fr; }
+.hero h1 { font-size: 2.2rem; }
+}
+</style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact Us</a>
-    </nav>
-  </header>
+<header>
+<nav>
+<a href="#home">HOME</a>
+<a href="#about">EXECUTIVE SUMMARY</a>
+<a href="#services">STRATEGIES</a>
+<a href="#contact">CONSULTATION</a>
+</nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>Empowering Your Financial Future</h1>
-    <p>At MaxTerra Financial Group LLC, we provide personalized financial consulting services to help businesses and individuals achieve their goals. Let us guide you toward success with clarity, strategy, and results.</p>
-    <a href="#contact" class="cta">Schedule Your Free Consultation Today</a>
-  </section>
+<section class="hero" id="home">
+<h1>ELEVATING CAPITAL. <span class="gold-text">DEFINING SUCCESS.</span></h1>
+<p>Bespoke financial architecture for high-net-worth individuals and emerging enterprises.</p>
+<a href="#contact" class="cta-btn">REQUEST A PRIVATE BRIEFING</a>
+</section>
 
-  <!-- About Us -->
-  <section class="section" id="about">
-    <h2>Who We Are</h2>
-    <p>MaxTerra Financial Group LLC is a trusted consulting firm based in the heart of Vancouver, BC. With years of experience in financial strategy, business consulting, and personalized advisory services, we are committed to helping our clients navigate complex challenges and unlock new opportunities.</p>
-    <p>Our team of experts brings a wealth of knowledge and a client-focused approach to every project. We understand that every client is unique, and we tailor our solutions to meet your specific needs. Whether you’re a small business owner, an entrepreneur, or an individual looking to secure your financial future, we’re here to provide the guidance and support you need to succeed.</p>
-    <p>At MaxTerra, we believe in building long-term relationships with our clients. Our mission is to empower you with the tools and strategies you need to achieve your financial goals and thrive in an ever-changing world.</p>
-  </section>
+<section class="about-container" id="about">
+<div>
+<h2 class="gold-text">Who We Are</h2>
+<p>MaxTerra Financial Group LLC is an elite consulting firm headquartered in Vancouver, BC. We specialize in navigating the complexities of modern markets with a focus on precision, discretion, and exponential growth.</p>
+<p>Our methodology transcends traditional consulting; we act as your strategic partners in wealth preservation and capital expansion.</p>
+</div>
+<div class="about-image">
+<img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1973" alt="Investment Office">
+</div>
+</section>
 
-  <!-- Services -->
-  <section class="section" id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Financial Strategy</h3>
-        <p>We help you develop a clear and actionable roadmap to achieve your financial goals. Our team analyzes your current financial situation, identifies opportunities for growth, and creates a customized strategy to maximize your returns. Whether you’re planning for short-term objectives or long-term wealth accumulation, we provide the expertise and guidance you need to succeed.</p>
-      </div>
-      <div class="service-card">
-        <h3>Business Consulting</h3>
-        <p>Our business consulting services are designed to help you streamline operations, improve efficiency, and drive growth. We work closely with you to identify areas of improvement, implement best practices, and develop strategies to enhance profitability. From startups to established enterprises, we provide tailored solutions to meet your unique business needs.</p>
-      </div>
-      <div class="service-card">
-        <h3>Investment Advisory</h3>
-        <p>Make informed decisions with our expert investment advisory services. We provide personalized recommendations based on your risk tolerance, financial goals, and market conditions. Our team stays ahead of market trends to help you build a diversified portfolio that aligns with your objectives. Let us guide you toward achieving your investment goals with confidence.</p>
-      </div>
-      <div class="service-card">
-        <h3>Retirement Planning</h3>
-        <p>Secure your future with our comprehensive retirement planning services. We help you create a tailored plan to ensure financial stability during your retirement years. From calculating your retirement needs to optimizing your savings and investments, we provide the tools and strategies you need to enjoy a comfortable and stress-free retirement.</p>
-      </div>
-      <div class="service-card">
-        <h3>Tax Optimization</h3>
-        <p>Minimize your tax liabilities and maximize your returns with our tax optimization services. Our team stays up-to-date with the latest tax laws and regulations to help you take advantage of every available opportunity. We provide personalized strategies to reduce your tax burden and ensure compliance with all relevant tax authorities.</p>
-      </div>
-    </div>
-  </section>
+<section id="services" style="padding-top: 80px;">
+<div class="section-title">
+<h2>Global Solutions</h2>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<i class="fas fa-chart-line"></i>
+<h3>Financial Strategy</h3>
+<p>A comprehensive roadmap utilizing algorithmic analysis and market foresight to maximize fiscal velocity.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-handshake"></i>
+<h3>Business Consulting</h3>
+<p>Streamlining operational infrastructure to ensure your enterprise remains agile in a volatile global economy.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-gem"></i>
+<h3>Investment Advisory</h3>
+<p>Exclusive access to diversified portfolios tailored for robust returns and risk mitigation.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-monument"></i>
+<h3>Retirement Planning</h3>
+<p>Legacy-focused planning ensuring generational wealth transfer and absolute financial independence.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-coins"></i>
+<h3>Tax Optimization</h3>
+<p>Sophisticated tax structures designed to legally protect assets and enhance net capital retention.</p>
+</div>
+</div>
+</section>
 
-  <!-- Testimonials -->
-  <section class="section" id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonials">
-      <div class="testimonial-card active">
-        <p>"MaxTerra helped us streamline our financial processes and grow our business like never before. Their expertise and personalized approach made all the difference. We’ve seen a 30% increase in profitability since working with them!"</p>
-        <p><strong>– Sarah Thompson, CEO of Thompson Enterprises</strong></p>
-      </div>
-      <div class="testimonial-card">
-        <p>"I was overwhelmed with retirement planning, but MaxTerra made it simple and stress-free. They took the time to understand my goals and created a tailored plan that gives me peace of mind. I can’t thank them enough!"</p>
-        <p><strong>– Michael Roberts, Retired Engineer</strong></p>
-      </div>
-      <div class="testimonial-card">
-        <p>"The team at MaxTerra is professional, knowledgeable, and truly cares about their clients. They helped us optimize our taxes and save thousands of dollars. Highly recommend!"</p>
-        <p><strong>– Emily Carter, Small Business Owner</strong></p>
-      </div>
-    </div>
-  </section>
+<section class="testimonial-section">
+<div class="testimonial-card active">
+<p>"The precision in their strategy is unmatched. MaxTerra didn't just manage our wealth; they redefined our trajectory."</p>
+<small>– SARAH THOMPSON, CEO OF THOMPSON ENTERPRISES</small>
+</div>
+<div class="testimonial-card">
+<p>"Discretion and results. That’s why we trust MaxTerra with our family’s private equity."</p>
+<small>– MICHAEL ROBERTS, PRIVATE INVESTOR</small>
+</div>
+</section>
 
-  <!-- Contact Us -->
-  <section class="section" id="contact">
-    <h2>Get in Touch</h2>
-    <p>We’d love to hear from you! Whether you have questions about our services or are ready to schedule a consultation, our team is here to help. Reach out to us using the information below, or fill out the form, and we’ll get back to you as soon as possible.</p>
-    <p><strong>Phone:</strong> +1 672 888 0310</p>
-    <p><strong>Email:</strong> info@maxterrafinancialgroupllc.com</p>
-    <p><strong>Address:</strong> 1067 West Cordova Street, Vancouver, BC</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number">
-      <textarea placeholder="Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+<section class="contact-container" id="contact">
+<div class="contact-info">
+<h2>Connect With Our Partners</h2>
+<p><i class="fas fa-phone"></i> +1 672 888 0310</p>
+<p><i class="fas fa-envelope"></i> info@maxterrafinancialgroupllc.com</p>
+<p><i class="fas fa-map-marker-alt"></i> 1067 West Cordova Street, Vancouver, BC</p>
+</div>
+<div class="contact-form">
+<form action="https://formspree.io/f/info@maxterrafinancialgroupllc.com" method="POST">
+<label>Full Name</label>
+<input type="text" name="name" placeholder="Full Name" required>
 
-  <!-- Footer -->
-  <footer>
-    <p>MaxTerra Financial Group LLC – Your Partner in Financial Success</p>
-    <p>Phone: +1 672 888 0310 | Email: info@maxterrafinancialgroupllc.com | Address: 1067 West Cordova Street, Vancouver, BC</p>
-    <p>© 2023 MaxTerra Financial Group LLC. All rights reserved.</p>
-  </footer>
+<label>Email Address</label>
+<input type="email" name="_replyto" placeholder="Email Address" required>
 
-  <!-- JavaScript -->
-  <script>
-    // Testimonials Carousel
-    let testimonials = document.querySelectorAll('.testimonial-card');
-    let currentTestimonial = 0;
+<label>Message</label>
+<textarea name="message" placeholder="How can we assist your financial goals?" rows="5" required></textarea>
 
-    function showTestimonial(index) {
-      testimonials.forEach((card, i) => {
-        card.classList.remove('active');
-        if (i === index) {
-          card.classList.add('active');
-        }
-      });
-    }
+<button type="submit" class="cta-btn" style="border:none; width:100%; cursor:pointer;">SUBMIT INQUIRY</button>
+</form>
+</div>
+</section>
 
-    function nextTestimonial() {
-      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-      showTestimonial(currentTestimonial);
-    }
+<footer>
+<p>© 2026 MaxTerra Financial Group LLC. Excellence in Financial Architecture.</p>
+<p>Privacy Policy | Terms of Service</p>
+</footer>
 
-    setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
-  </script>
+<script>
+let testimonials = document.querySelectorAll('.testimonial-card');
+let current = 0;
+
+setInterval(() => {
+testimonials[current].classList.remove('active');
+current = (current + 1) % testimonials.length;
+testimonials[current].classList.add('active');
+}, 6000);
+</script>
 </body>
 </html>
-
